@@ -10,45 +10,37 @@ function makeSentence(array) {
   return string;
 }
 
-function commonValues(arr1, arr2) {
-  return arr1.filter(function(value) {
-    return arr2.indexOf(value) > -1;
-  });
-}
+// function commonValues(arr1, arr2) {
+//   return arr1.filter(function(value) {
+//     return arr2.indexOf(value) > -1;
+//   });
+// }
 
-let mySkills = [
-  "Java",
-  "Javascript",
-  "Ruby on Rails",
-  "Ruby",
-  "Adobe Photoshop",
-  "Cascading Style Sheet (CSS)",
-  "React.js",
-  "React/Redux",
-  "HTML",
-  "SCSS",
-  "SASS",
-  "Firebase",
-  "PostgreSQL",
-  "React Native"
-];
+// let mySkills = [
+//   "Javascript",
+//   "Ruby on Rails",
+//   "Ruby",
+//   "Cascading Style Sheet (CSS)",
+//   "React.js",
+//   "React/Redux",
+//   "HTML",
+//   "SCSS",
+//   "SASS",
+//   "SQL",
+//   "React Native",
+//   "Python",
+//   "TDD"
+// ];
 
-const createMessage = (founder, title, company, jobTags) => {
-  let skills =
-    makeSentence(commonValues(jobTags, mySkills)) ||
-    "Javascript, Ruby, and Python, and their various implementations;";
+const createMessage = (founder, title) => {
 
   return (
     "Hello " +
     founder +
     "," +
-    "\nI am a Software Engineer, and I would to apply for the position of " +
+    "\nI'm a web developer with experience in Javascript, Ruby, and Python, and a background in investment management and equity research. I am interested in the " +
     title +
-    " over at " +
-    company +
-    ". I am experienced in " +
-    skills +
-    " and I feel there's no time like the present to learn something new. Problem Solving is my biggest motivator, as I love tackling challenges. As you're no doubt aware, this blurb seems generic, and thats because it is. This message is 100% automated, and thats why I think you should hire me. \nBest,\nWadah Adlan"
+    " position. My skills across the full stack, including a variety of languages and frameworks that are displayed in my most recent project, SafeHavn. The single-page web app is built using React-Redux front end, and a Rails backend. My project emphasizes an interactive experience, particularly when implementing the Google Maps API and designing home show pages. \nI desire to find a position in which I can add new technologies to my toolbox and refine my skills. I invite you to visit my LinkedIn and portfolio sites. Do reach out at 917 957 0711. Thank you for your time and I look forward to hearing from your team. \nBest,\nDavid Chen"
   );
 };
 
@@ -92,7 +84,7 @@ $button.on("click", () => {
 });
 
 const insertApplyButton = () => {
-  let oldButton = $("button.c-button.c-button--transparent");
+  let oldButton = $("a.js-try-quiz-button");
   if (oldButton.length > 0) {
     return oldButton.replaceWith($button);
   } else {
@@ -100,7 +92,7 @@ const insertApplyButton = () => {
     setTimeout(insertApplyButton, 500);
   }
 };
-//
+
 let currentPage = window.location.href;
 if (currentPage === "https://angel.co/jobs") {
   insertApplyButton();
