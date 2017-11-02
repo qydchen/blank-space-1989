@@ -40,7 +40,7 @@ const createMessage = (founder, title) => {
     "," +
     "\nI'm a web developer with experience in Javascript, Ruby, and Python, and a background in investment management and equity research. I am interested in the " +
     title +
-    " position. My skills across the full stack, including a variety of languages and frameworks that are displayed in my most recent project, SafeHavn. The single-page web app is built using React-Redux front end, and a Rails backend. My project emphasizes an interactive experience, particularly when implementing the Google Maps API and designing home show pages. \nI desire to find a position in which I can add new technologies to my toolbox and refine my skills. I invite you to visit my LinkedIn and portfolio sites. Do reach out at 917 957 0711. Thank you for your time and I look forward to hearing from your team. \nBest,\nDavid Chen"
+    " position. My skills across the full stack, including a variety of languages and frameworks that are displayed in my most recent project, SafeHavn. The single-page web app is built using React-Redux front end, and a Rails backend. My project emphasizes an interactive experience, particularly when implementing the Google Maps API and designing home show pages. \nI desire to find a position in which I can add new technologies to my toolbox and refine my skills. I invite you to visit my LinkedIn, portfolio sites and my github (https://github.com/qydchen). Do reach out at 917 957 0711. Thank you for your time and I look forward to hearing from your team. \nBest,\nDavid Chen"
   );
 };
 
